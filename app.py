@@ -5,10 +5,10 @@ Main Streamlit application file
 import streamlit as st
 import pandas as pd
 from config import *
-from utils.document_processor import DocumentProcessor
-from utils.financial_analyzer import FinancialAnalyzer
-from utils.llm_handler import LLMHandler
-from utils.data_aggregator import DataAggregator
+from document_processor import DocumentProcessor
+from financial_analyzer import FinancialAnalyzer
+from llm_handler import LLMHandler
+from data_aggregator import DataAggregator
 
 def display_tables(tables: list, doc_processor, financial_analyzer) -> list:
     """Display and analyze tables"""
